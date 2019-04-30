@@ -5,8 +5,8 @@ import colors from "./styles/colors";
 import MenuButton from "./components/MenuButton";
 import Modal from "@paraboly/react-native-modal-box";
 import Geolocation from "react-native-geolocation-service";
-import styles, { _modalContainer } from "./ReportModal.style";
-import MenuOptionSelectable from "./components/menuOptionThemes/MenuOptionSelectable";
+import styles, { _modalContainer, titleContainer } from "./ReportModal.style";
+import MenuOptionSelectable from "./components/MenuOptionSelectable";
 import {
   View,
   Text,
@@ -128,19 +128,19 @@ class ReportModal extends Component {
       title,
       refName,
       onPress,
-      iconConfig,
+      fontFamily,
       modalWidth,
       titleStyle,
       buttonText,
       buttonStyle,
       modalHeight,
       menuOptions
-    } = this.props.popupMenuData;
+    } = this.props;
 
     return (
       <Modal
         backdrop
-        isOpen={false}
+        isOpen={true}
         ref={refName || "reportmodal"}
         easing={Easing.elastic(0.5)}
         style={[
@@ -151,7 +151,7 @@ class ReportModal extends Component {
       >
         <View style={styles.container}>
           <View style={styles.containerGlue}>
-            <View style={titleStyle || styles.titleContainer}>
+            <View style={titleStyle || titleContainer(modalWidth)}>
               <Text style={styles.textStyle}>
                 {title || "Sorununuzu Bildirin"}
               </Text>
@@ -164,7 +164,7 @@ class ReportModal extends Component {
             </View>
             <View style={buttonStyle || styles.buttonStyle}>
               <MenuButton
-                text={buttonText || "Bildir"}
+                buttonText={buttonText}
                 color={colors.theme.light.primary}
                 onPress={() => {
                   if (onPress) {

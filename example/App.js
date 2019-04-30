@@ -7,15 +7,16 @@
  */
 
 import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
+import { Dimensions, StyleSheet, Text, View } from "react-native";
 import ReportModal from "./lib/src/ReportModal";
 
+const { width, height } = Dimensions.get("window");
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <ReportModal />
+        <ReportModal title="ReportModal Title" buttonText="Report" />
       </View>
     );
   }

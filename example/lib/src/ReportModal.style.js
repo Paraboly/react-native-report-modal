@@ -17,6 +17,16 @@ export function _modalContainer(modalWidth, modalHeight) {
     })
   };
 }
+
+export function titleContainer(modalWidth) {
+  return {
+    marginTop: 16,
+    alignSelf: "flex-start",
+    justifyContent: "flex-start",
+    width: modalWidth - 32 || width * 0.65
+  };
+}
+
 export default {
   modalContainer: {
     flex: 1,
@@ -37,13 +47,11 @@ export default {
     backgroundColor: "transparent"
   },
   containerGlue: { flexDirection: "column" },
-  titleContainer: {
-    margin: 16
-  },
   textStyle: {
     fontSize: 20,
-    fontFamily: "Metropolis-Medium",
+    textAlign: "left",
     color: colors.theme.light.primaryDark
+    // fontFamily: "Metropolis-Medium",
   },
   menuOptionsContainer: {
     flex: 1,
