@@ -61,5 +61,7 @@ export default {
     flexDirection: "row",
     alignSelf: "flex-end"
   },
-  menuOptionsPadding: { padding: 8 }
+  menuOptionsPadding: {
+    padding: 8
+  }
 };

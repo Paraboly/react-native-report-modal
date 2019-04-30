@@ -42,7 +42,7 @@ class ReportModal extends Component {
   fetchLocation() {
     Geolocation.getCurrentPosition(
       position => {
-        console.log(position);
+        console.log("UserLocation: ", position);
         this.setState({ location: position });
       },
       error => {
@@ -106,15 +106,15 @@ class ReportModal extends Component {
     }
   }
 
-  renderMenuOptions(props) {
-    const {
-      item,
-      index,
-      length,
-      iconConfig,
-      dividerWidth,
-      optionFontFamily
-    } = props;
+  renderMenuOptions(
+    item,
+    index,
+    length,
+    iconConfig,
+    dividerWidth,
+    optionFontFamily
+  ) {
+    console.log("Item: ", item);
     return (
       <View key={index} style={styles.menuOptionsPadding}>
         <MenuOptionSelectable
@@ -137,13 +137,16 @@ class ReportModal extends Component {
       title,
       refName,
       onPress,
+      iconConfig,
       fontFamily,
       modalWidth,
       titleStyle,
       buttonText,
       buttonStyle,
       modalHeight,
-      menuOptions
+      menuOptions,
+      dividerWidth,
+      optionFontFamily
     } = this.props;
 
     return (
@@ -168,7 +171,14 @@ class ReportModal extends Component {
             <View style={styles.menuOptionsContainer}>
               {menuOptions &&
                 menuOptions.map((item, index) =>
-                  this.renderMenuOptions(item, index, menuOptions.length)
+                  this.renderMenuOptions(
+                    item,
+                    index,
+                    menuOptions.length,
+                    iconConfig,
+                    dividerWidth,
+                    optionFontFamily
+                  )
                 )}
             </View>
             <View style={buttonStyle || styles.buttonStyle}>

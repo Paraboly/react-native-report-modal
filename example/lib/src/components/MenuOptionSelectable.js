@@ -14,7 +14,7 @@ const MenuOptionSelectable = props => {
     iconConfig,
     dividerWidth,
     optionFontFamily
-  } = this.props;
+  } = props;
   return (
     <TouchableOpacity onPress={onPress}>
       <View style={styles.container}>
