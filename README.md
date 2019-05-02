@@ -1,6 +1,6 @@
 <img alt="Paraboly React Native Report Modal" src="https://github.com/Paraboly/react-native-report-modal/blob/master/assets/op_logo.png" width="1050"/>
 
-Custimazble Report Modal via Paraboly for React Native.
+Customizable Report Modal via Paraboly for React Native.
 
 [![npm version](https://img.shields.io/npm/v/@paraboly/react-native-report-modal.svg)](https://www.npmjs.com/package/@paraboly/react-native-report-modal)
 [![npm](https://img.shields.io/npm/dt/@paraboly/react-native-report-modal.svg)](https://www.npmjs.com/package/@paraboly/react-native-report-modal)
