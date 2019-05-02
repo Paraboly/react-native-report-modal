@@ -13,7 +13,7 @@
   ],
   "homepage": "https://www.freakycoder.com",
   "bugs": "https://github.com/Paraboly/react-native-report-modal/issues",
-  "main": "./lib/src/components/ReportModal.js",
+  "main": "./lib/src/ReportModal.js",
   "repository": "git@github.com:Paraboly/react-native-report-modal.git",
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
