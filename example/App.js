@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import ReportModal from "./lib/src/ReportModal";
-import IcomoonConfig from "./assets/selection.json";
 import { View, StyleSheet } from "react-native";
 import FastImage from "react-native-fast-image";
+import IcomoonConfig from "./assets/selection.json";
+import ReportModal from "@paraboly/react-native-report-modal";
 
 export default class App extends Component {
   menuOptions = [
@@ -53,8 +53,9 @@ export default class App extends Component {
           source={require("./assets/parabol_logo.png")}
         />
         <ReportModal
-          title="Sorun Bildiriniz"
+          isOpen
           buttonText="Gönder"
+          title="Sorun Bildiriniz"
           iconConfig={IcomoonConfig}
           menuOptions={this.menuOptions}
           onPress={selectedItems => {

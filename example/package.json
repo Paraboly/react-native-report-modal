@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@paraboly/react-native-modal-box": "0.0.1",
+    "@paraboly/react-native-report-modal": "0.0.12",
     "axios": "^0.18.0",
     "react": "16.8.3",
     "react-native": "0.59.5",
