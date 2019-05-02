@@ -14,10 +14,10 @@ export function container(buttonShadowColor, buttonBackgroundColor) {
       buttonBackgroundColor || colors.theme.light.primaryBackground,
     ...Platform.select({
       ios: {
-        shadowRadius: 5,
-        shadowOpacity: 0.4,
-        shadowOffset: { width: 2, height: 2 },
-        shadowColor: buttonShadowColor || colors.theme.light.primaryDark
+        shadowRadius: 1,
+        shadowOpacity: 0.7,
+        shadowOffset: { width: 0.5, height: 0.5 },
+        shadowColor: buttonShadowColor || colors.theme.light.primary
       },
       android: {
         elevation: 5
@@ -32,7 +32,7 @@ export function textStyle(buttonFontFamily, buttonTextColor) {
     textAlign: "center",
     alignSelf: "center",
     justifyContent: "center",
-    color: buttonTextColor || colors.theme.light.primaryDark,
+    color: buttonTextColor || colors.theme.light.primary,
     fontFamily: buttonFontFamily,
     ...Platform.select({
       ios: {
