@@ -4302,9 +4302,9 @@ react-native-dynamic-vector-icons@0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/react-native-dynamic-vector-icons/-/react-native-dynamic-vector-icons-0.0.3.tgz#5a3c345e991c14b43dcfd197df99813845343867"
 
-react-native-fast-image@^5.3.0:
-  version "5.4.2"
-  resolved "https://registry.yarnpkg.com/react-native-fast-image/-/react-native-fast-image-5.4.2.tgz#d761cb9dddc0473b537544617e511a11c9e18413"
+react-native-fast-image@^8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-fast-image/-/react-native-fast-image-8.3.0.tgz#5821fac5e8759b3a87628600522eb72c579b0b9f"
 
 react-native-material-ripple@^0.8.0:
   version "0.8.0"
