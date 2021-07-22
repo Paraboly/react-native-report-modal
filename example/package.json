@@ -11,7 +11,7 @@
     "@paraboly/react-native-report-modal": "0.0.12",
     "axios": "^0.21.1",
     "react": "16.8.3",
-    "react-native": "0.59.5",
+    "react-native": "0.62.3",
     "react-native-custom-icon": "0.0.3",
     "react-native-dynamic-vector-icons": "0.0.3",
     "react-native-fast-image": "^8.3.0",
